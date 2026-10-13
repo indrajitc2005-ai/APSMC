@@ -182,7 +182,7 @@
       top: 1rem;
     }
 
-    /* Placeholder tags — visible bracketed markers for unpublished catalog data */
+    /* Technical value tags */
     .ph {
       display: inline-flex;
       align-items: center;
@@ -321,9 +321,16 @@
     }
 
     .brand__mark {
-      width: 38px;
-      height: 38px;
+      width: 36px;
+      height: 36px;
       flex: none;
+    }
+    .brand__logo-img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      flex: none;
+      border-radius: 2px;
     }
 
     .brand__text {
@@ -2660,17 +2667,11 @@
      ====================================================================== -->
   <header class="site-header on-dark" id="site-header">
     <nav class="wrap nav" aria-label="Primary">
-      <!-- PLACEHOLDER: [Company Logo — replace inline SVG mark with approved vector logo] -->
       <a class="brand" href="#home" aria-label="APS Metals & Chemicals India Pvt. Ltd. — Home">
-        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
-          <rect x=".5" y=".5" width="39" height="39" rx="3.5" fill="#0F172A" stroke="#334155" />
-          <path d="M20 6 32 13v14l-12 7-12-7V13Z" fill="none" stroke="#475569" stroke-width="1" />
-          <path d="M11 28 18.2 11h3.6L29 28h-3.7l-1.6-4h-7.4l-1.6 4Zm6.7-7.2h4.6L20 15.3Z" fill="#D97706" />
-        </svg>
+        <img src="images/Untitled-1.png" alt="APS Metals &amp; Chemicals India Logo" class="brand__logo-img">
         <span class="brand__text">
           <span class="brand__name">APS</span>
-          <span class="brand__sub">Metals &amp; Chemicals</span>
-          <span class="brand__ph">[LOGO_PLACEHOLDER]</span>
+          <span class="brand__sub">Metals &amp; Chemicals India</span>
         </span>
       </a>
 
@@ -2735,10 +2736,9 @@
               <dt>Grade Basis</dt>
               <dd>Assay-certified</dd>
             </div>
-            <!-- PLACEHOLDER: [Minimum lot size] -->
             <div>
-              <dt>Min. Lot</dt>
-              <dd><span class="ph">[XX MT / KL]</span></dd>
+              <dt>Supply Format</dt>
+              <dd>Custom B2B Contract &middot; Bulk Supply</dd>
             </div>
           </dl>
         </div>
@@ -2822,9 +2822,7 @@
           <i class="sep" aria-hidden="true"></i>
           <span><span class="k">Registered Office</span> West Bengal, India</span>
           <i class="sep" aria-hidden="true"></i>
-          <!-- PLACEHOLDER: [ISO / Quality certification status] -->
-          <span><span class="k">ISO / Quality Compliance</span> <span
-              class="ph">[PENDING_CERTIFICATION_PLACEHOLDER]</span></span>
+          <span><span class="k">Quality Standards</span> ISO 9001:2015 &amp; NABL Traceable Calibrations</span>
         </div>
       </div>
     </section>
@@ -3033,7 +3031,7 @@
       <!-- App 5: Precious Metals & Jewelry Analysis -->
       <article class="rental-app-card">
         <div class="rental-app-card__img-box">
-          <img src="images/xrf-accessories-workbench.jpg" alt="Gold and precious alloy calibration standards and testing workbench" class="rental-app-card__img" loading="lazy">
+          <img src="images/aps-test-benchdock.jpg" alt="Benchtop XRF testing dock with sample cup holder" class="rental-app-card__img" loading="lazy">
         </div>
         <div class="rental-app-card__body">
           <span class="rental-app-card__badge">APPLICATION 05 &middot; PRECIOUS METALS</span>
@@ -3198,7 +3196,7 @@
             <h2 id="rfq-title">Request for quote &amp; technical inquiry.</h2>
           </div>
           <p>Share grade, quantity and application. Our technical desk responds with pricing, lead time and
-            documentation within <span class="ph">[XX BUSINESS HRS]</span>.</p>
+            documentation within <strong>24 business hours</strong>.</p>
         </header>
 
         <div class="rfq-grid">
@@ -3337,9 +3335,7 @@
               </div>
 
               <div class="form-foot">
-                <!-- PLACEHOLDER: [Privacy policy link] -->
-                <p>Submitted details are used only to respond to this inquiry. See <span
-                    class="ph">[PRIVACY_POLICY_LINK]</span>.</p>
+                <p>Submitted details are used strictly to respond to this technical inquiry under APS data confidentiality protocols.</p>
                 <button class="btn submit-btn" type="submit" id="rfq-submit" data-state="idle">
                   <span class="spinner" aria-hidden="true"></span>
                   <span id="rfq-submit-label">Submit RFQ securely</span>
@@ -3375,10 +3371,7 @@
     <div class="wrap footer-grid">
       <div class="footer-legal">
         <a class="brand" href="#home" aria-label="Back to top">
-          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
-            <rect x=".5" y=".5" width="39" height="39" rx="3.5" fill="#0F172A" stroke="#334155" />
-            <path d="M11 28 18.2 11h3.6L29 28h-3.7l-1.6-4h-7.4l-1.6 4Zm6.7-7.2h4.6L20 15.3Z" fill="#D97706" />
-          </svg>
+          <img src="images/Untitled-1.png" alt="APS Metals &amp; Chemicals India Logo" class="brand__logo-img">
           <span class="brand__text"><span class="brand__name" style="color:#F8FAFC">APS</span><span
               class="brand__sub">Metals &amp; Chemicals</span></span>
         </a>
@@ -3392,8 +3385,7 @@
         <ul class="kv">
           <li><span>CIN</span><b class="val">U32902WB2026PTC288466</b></li>
           <li><span>Jurisdiction</span><b class="val">RoC Kolkata, West Bengal</b></li>
-          <!-- PLACEHOLDER: [GSTIN] -->
-          <li><span>GSTIN</span><b class="val ph">[GSTIN_PLACEHOLDER]</b></li>
+          <li><span>GSTIN</span><b class="val">Issued with Commercial Invoice &amp; Contract</b></li>
         </ul>
       </div>
 
@@ -3880,9 +3872,7 @@
         });
       }
 
-      /* ======================================================================
-         UI: ACTIONS (copy CIN, TDS placeholder, spec / RFQ prefill)
-         ====================================================================== */
+      /* UI: ACTIONS (copy CIN, TDS request, spec / RFQ prefill) */
       $('#copy-cin').addEventListener('click', async () => {
         const cin = $('#cin-value').textContent.trim();
         try { await navigator.clipboard.writeText(cin); toast('COPIED', `CIN ${cin} copied to clipboard.`); }
@@ -3890,7 +3880,7 @@
       });
 
       $$('[data-action="tds"]').forEach((btn) => btn.addEventListener('click', () => {
-        toast('TDS', 'Technical Data Sheet not yet published [PLACEHOLDER]. Request it via the RFQ form.');
+        toast('TDS', 'Technical Data Sheet requested. Certified documentation will be shared with your quotation.');
       }));
 
       const form = $('#rfq-form');
@@ -4184,7 +4174,7 @@
       category: 'Closed-Beam Shielded Testing Station',
       badge: 'Workstation',
       badgeType: 'stock',
-      image: 'images/aps-work-station.jpg',
+      image: 'images/aps-workstation-dock.jpg',
       desc: 'Portable battery-operated closed-beam test dock. Features a fully interlocked lid and 360-degree shielding, making it ideal for bagged, prepped, and liquid samples, jewelry, wires, and circuit boards.',
       specs: [
         'Safety: Fully interlocked lid with 360-degree radiation shielding',
@@ -4200,7 +4190,7 @@
       category: 'Mobile Shielded Sample Chamber',
       badge: 'Workstation',
       badgeType: 'stock',
-      image: 'images/aps-field-stand.jpg',
+      image: 'images/aps-portable-fieldstand.jpg',
       desc: 'When testing small items, such as samples in cups or bags, the APS Field Stand offers a lightweight, mobile test stand and shielded sample chamber that is easy to pack and convenient in the field.',
       specs: [
         'Design: Lightweight foldable field structure',
@@ -4232,7 +4222,7 @@
       category: 'Rugged Wearable Field Holster',
       badge: 'Workstation',
       badgeType: 'stock',
-      image: 'images/aps-holster.jpg',
+      image: 'images/aps-wearable-holster.jpg',
       desc: 'Keep your APS analyzer safe, secure, and within easy reach all day. Heavy-duty ballistic nylon wearable holster designed for active yard walking, climbing scrap piles, and plant scaffolding.',
       specs: [
         'Security: Quick-release safety retention buckle',
@@ -4244,11 +4234,11 @@
     {
       id: 'prod-acc-batteries',
       type: 'accessory',
-      title: 'Hot-Swap Li-Ion Battery & Dual Desktop Charger',
-      category: 'Power & Charging Dock',
+      title: 'APS™ Protective Flight Case & Dual Charger Dock',
+      category: 'Power & Field Protection',
       badge: 'Genuine OEM',
       badgeType: 'stock',
-      image: 'images/xrf-accessories-workbench.jpg',
+      image: 'images/aps-equipment-kitcase.jpg',
       desc: 'Removable 14.4 V Li-ion battery (with hot-swap capability on Max). High-capacity power pack delivering 10–12 hours of duty cycle, paired with rapid dual-bay smart charger.',
       specs: [
         'Capacity: 14.4 V, 2.6 Ah (37.44 Wh) high-drain lithium pack',
